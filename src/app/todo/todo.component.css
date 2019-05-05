@@ -1,0 +1,26 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.conteinar {
+    text-align: center; 
+}
+h1 {
+    color: gray;
+    font-size: 6em;
+}
+ul {
+    margin-left: 35%;
+    line-height: 4em;
+}
+li {
+    font-size: 3em;
+}
+.class1 {
+    color: red;
+}
+.class2 {
+    color: yellow;
+}
+.class3 {
+    color:green;
+}
