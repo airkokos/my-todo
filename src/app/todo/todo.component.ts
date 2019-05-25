@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
+
+
+
+
 
 @Component({
   selector: 'app-todo',
@@ -6,16 +10,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo.component.css']
 })
 export class TodoComponent implements OnInit {
-  title = 'To Do List';
-  item1 = 'Create nickname';
-  item2 = 'Win streetball tournament';
-  item3 = 'Buy new jordan`s';
-  item4 = 'Do my homework';
-  item5 = 'Go to the gym';
 
-  constructor() { }
+  @Input() todoList;
+
+
+
+  constructor() {}
+  color;
 
   ngOnInit() {
-  }
+    switch (this.todoList.priority) {
+      case 1:
+      this.color = 'green';
+      break;
+      case 2:
+      this.color = 'yellow';
+      break;
+      case 3:
+      this.color = 'red';
+      break;
+    }
+    }
 
 }

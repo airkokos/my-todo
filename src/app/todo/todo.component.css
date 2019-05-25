@@ -1,26 +1,22 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
-.conteinar {
-    text-align: center; 
-}
-h1 {
-    color: gray;
-    font-size: 6em;
-}
 ul {
-    margin-left: 35%;
-    line-height: 4em;
+  list-style-type: none;
 }
-li {
-    font-size: 3em;
+ 
+li:before {
+  content: '\2713';
 }
-.class1 {
-    color: red;
+li  {
+  margin-left: 40%;
+  font-size: 1.5em;
+  font-weight: bold;
 }
-.class2 {
+  .green {
+    color: green;
+  }
+  .yellow {
     color: yellow;
-}
-.class3 {
-    color:green;
-}
+  }
+  .red {
+    color: red;
+  }
+  

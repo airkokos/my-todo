@@ -1,12 +1,8 @@
-<div class="conteinar">
-<h1 >{{title}}</h1>
-</div>
-  <ul>
-    <li [ngClass]="{class3: true}">{{item1}}</li>
-    <li [ngClass]="{class2: true}">{{item2}}</li>
-    <li [ngClass]="{class3: true}">{{item3}}</li>
-    <li [ngClass]="{class1: true}">{{item4}}</li>
-    <li [ngClass]="{class2: true}">{{item5}}</li>
-  </ul>
 
- 
+    <ul>
+      <li [ngClass]="color">{{ todoList.item | uppercase }}</li>
+    </ul>
+
+
+
+   
